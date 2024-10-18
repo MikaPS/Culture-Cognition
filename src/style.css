@@ -79,9 +79,12 @@ button:focus-visible {
   position: absolute; /* Allows positioning with top and left */
   width: var(--rect-width, 400px); /* Default width if not set */
   height: var(--rect-height, 150px); /* Default height if not set */
-  top: var(--rect-top, 50px);; /* Fixed top position */
+  top: var(--rect-top, 50px); /* Fixed top position */
   left: 700px; /* Fixed left position */
-  background-color: var(--rect-bg-color, #d6a766); /* Default color if not set */
+  background-color: var(
+    --rect-bg-color,
+    #d6a766
+  ); /* Default color if not set */
 }
 
 .new_day_rect {
@@ -90,5 +93,8 @@ button:focus-visible {
   height: var(--rect-height, 100px); /* Default height if not set */
   top: 50px; /* Fixed top position */
   left: 50px; /* Fixed left position */
-  background-color: var(--rect-bg-color, #e48080); /* Default color if not set */
+  background-color: var(
+    --rect-bg-color,
+    #e48080
+  ); /* Default color if not set */
 }

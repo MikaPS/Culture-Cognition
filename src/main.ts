@@ -34,6 +34,8 @@ const time_investment = [1, 5];
 const payout_investment = [20, 100];
 const cost_investment = [10, 80];
 
+let currentCost = 0;
+
 const openInvestments: Investment[] = [];
 
 const img = document.createElement("img");
@@ -92,6 +94,7 @@ function dialougeAnimation() {
   gsap.to(pin, { scale: 20, duration: 2, ease: "power2.inOut" }); // animation
   dialougeApp.append(pin);
 }
+
 function uiTextDialouge(heightOffset: number) {
   const rectangle = document.createElement("span");
   rectangle.className = "rectangle"; // Defined in the CSS
@@ -105,6 +108,9 @@ function uiTextDialouge(heightOffset: number) {
   envelope.style.left = `${500}px`;
 
   const investment = investmentCreator();
+  if (heightOffset == 0) {
+    currentCost = investment.cost;
+  }
 
   const text = document.createElement("span");
   const relativePos = rectangle.getBoundingClientRect();
@@ -126,7 +132,7 @@ function uiTextDialouge(heightOffset: number) {
   });
 
   const yes = document.createElement("span");
-  yes.textContent = `👍 (cost: ${investment.cost})`;
+  yes.textContent = `👍 (cost: ${currentCost})`;
   yes.style.position = "absolute";
   yes.style.top = `${relativePos.top + 100}px`;
   yes.style.left = `${relativePos.left + 5}px`;
@@ -138,8 +144,7 @@ function uiTextDialouge(heightOffset: number) {
       openInvestments.push(investment);
     }
     dialougeApp.innerHTML = "";
-    // currentPin.textContent = investment.symbol;
-    // newDay();
+    newDay();
   });
 
   const no = document.createElement("span");
