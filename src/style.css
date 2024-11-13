@@ -89,12 +89,19 @@ button:focus-visible {
 
 .new_day_rect {
   position: absolute; /* Allows positioning with top and left */
-  width: var(--rect-width, 300px); /* Default width if not set */
-  height: var(--rect-height, 100px); /* Default height if not set */
-  top: 50px; /* Fixed top position */
-  left: 50px; /* Fixed left position */
+  width: var(--rect-width, 600px); /* Default width if not set */
+  height: var(--rect-height, 600px); /* Default height if not set */
+  top: 150px; /* Fixed top position */
+  left: 150px; /* Fixed left position */
   background-color: var(
     --rect-bg-color,
-    #e48080
+    #d5b1f2
   ); /* Default color if not set */
+}
+
+@font-face {
+  font-family: 'londrina';
+  src: url('../public/assets/fonts/LondrinaSketch-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
