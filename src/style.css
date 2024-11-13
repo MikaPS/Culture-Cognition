@@ -100,8 +100,9 @@ button:focus-visible {
 }
 
 @font-face {
-  font-family: 'londrina';
-  src: url('../public/assets/fonts/LondrinaSketch-Regular.ttf') format('truetype');
+  font-family: "londrina";
+  src: url("../public/assets/fonts/LondrinaSketch-Regular.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
