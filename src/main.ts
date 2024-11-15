@@ -175,17 +175,35 @@ function uiTextDialouge(heightOffset: number) {
   text.style.top = `${relativePos.top + 30}px`;
   text.style.left = `${relativePos.left + 5}px`;
 
+  const name = document.createElement("span");
+  name.innerHTML = `&nbsp;&nbsp;${investment.name}&nbsp;&nbsp;`;
+  name.style.position = "absolute";
+  name.style.top = `${relativePos.top + 3}px`;
+  name.style.left = `${relativePos.left + 3}px`;
+  name.style.borderRadius = "3px";
+  name.style.border = "2px solid #70452a";
+  name.style.backgroundColor = "#e0b79d";
+  name.style.padding = "1px";
+
   const symbol = document.createElement("span");
   symbol.textContent = investment.symbol;
   symbol.style.position = "absolute";
-  symbol.style.top = `${relativePos.top + 10}px`;
-  symbol.style.right = `${relativePos.right + 20}px`;
+  symbol.style.top = `${relativePos.top + 3}px`;
+  symbol.style.right = `${relativePos.right + 3}px`;
+  symbol.style.borderRadius = "3px";
+  symbol.style.border = "2px solid #70452a";
+  symbol.style.backgroundColor = "#e0b79d";
+  symbol.style.padding = "1px";
 
   const next = document.createElement("span");
   next.textContent = "⏭️";
   next.style.position = "absolute";
   next.style.bottom = `${relativePos.bottom + 5}px`;
   next.style.left = `${relativePos.left + 5}px`;
+  next.style.padding = "5px";
+  next.style.borderRadius = "5px";
+  next.style.border = "2px solid #3498db";
+  next.style.backgroundColor = "#f0f8ff";
   next.addEventListener("click", () => {
     text.innerText = `The success of my business is ${investment.risk}%\nYou'll get ${investment.payout}$ in ${investment.time} days\nWill you invest in me?`;
     next.remove();
@@ -198,6 +216,10 @@ function uiTextDialouge(heightOffset: number) {
   yes.style.position = "absolute";
   yes.style.top = `${relativePos.top + 100}px`;
   yes.style.left = `${relativePos.left + 5}px`;
+  yes.style.padding = "5px";
+  yes.style.borderRadius = "5px";
+  yes.style.border = "2px solid #3498db";
+  yes.style.backgroundColor = "#f0f8ff";
   yes.addEventListener("click", () => {
     yes.remove();
     no.remove();
@@ -245,12 +267,17 @@ function uiTextDialouge(heightOffset: number) {
   no.style.position = "absolute";
   no.style.top = `${relativePos.top + 100}px`;
   no.style.left = `${relativePos.left + 250}px`;
+  no.style.padding = "5px";
+  no.style.borderRadius = "5px";
+  no.style.border = "2px solid #3498db";
+  no.style.backgroundColor = "#f0f8ff";
   no.addEventListener("click", () => {
     yes.remove();
     no.remove();
     dialougeApp.innerHTML = "";
     newDay();
   });
+  rectangle.appendChild(name);
   rectangle.appendChild(symbol);
   rectangle.appendChild(text);
   rectangle.appendChild(next);
@@ -320,10 +347,10 @@ function newDay() {
 
   let newPayments = "";
   closedInvestments.forEach((investment) => {
-    newPayments += `${investment.name} got you ${investment.payout}\n`;
+    newPayments += `${investment.symbol}${investment.name}${investment.symbol} got you ${investment.payout}\n`;
   });
   openInvestments.forEach((investment) => {
-    newPayments += `You need to wait ${investment.time} days to see the payout\nof ${investment.symbol}${investment.name}${investment.symbol}\n`;
+    newPayments += `You need to wait ${investment.time} days to see the payout of\n\t${investment.symbol}${investment.name}${investment.symbol}\n`;
   });
 
   const yes = document.createElement("span");
@@ -339,7 +366,7 @@ function newDay() {
   dayApp.append(container);
 
   // end game condition
-  if (money <= 0 || day >= 10) {
+  if (money <= 0 || day >= 5) {
     endGame();
   }
 }
@@ -386,10 +413,9 @@ function pinCreator(
   text.style.left = `${left}px`;
   text.style.fontSize = "20px";
   // add color around it depends if it was successful
-  text.style.display = "inline-block"; // Makes the span behave like a block element
-  text.style.padding = "5px"; // Adds padding around the text
-  // text.style.border = "2px solid #3498db"; // Blue border around the text
-  text.style.borderRadius = "5px"; // Optional: rounded corners
+  text.style.display = "inline-block";
+  text.style.padding = "5px";
+  text.style.borderRadius = "5px";
   if (isSuccess == 0) {
     text.style.backgroundColor = "#f0f8ff";
   } else if (isSuccess == 1) {
@@ -435,6 +461,7 @@ function loadGameScene() {
 
   app.appendChild(img);
   app.appendChild(instructions);
+
   pinCreator(height * 0.67, width * 0.22, pinSymbols[1], 1, pinSucess[1]);
   pinCreator(height * 0.5, width * 0.7, pinSymbols[2], 2, pinSucess[2]);
   pinCreator(height * 0.9, width * 0.42, pinSymbols[3], 3, pinSucess[3]);
@@ -471,7 +498,7 @@ function endGame() {
   });
 
   closedInvestments.forEach((investment) => {
-    newPayments += `${investment.name} got you ${investment.payout}\n`;
+    newPayments += `${investment.symbol}${investment.name}${investment.symbol} got you ${investment.payout}$\n`;
   });
   // info about the game progress
   const img = document.createElement("img");
@@ -571,6 +598,11 @@ function startScreen() {
   yes.style.position = "absolute";
   yes.style.top = `${height * 0.7}px`;
   yes.style.left = `${width * 0.5}px`;
+  yes.style.padding = "5px";
+  yes.style.borderRadius = "5px";
+  yes.style.border = "2px solid #3498db";
+  yes.style.backgroundColor = "#f0f8ff";
+
   yes.addEventListener("click", () => {
     loadGameScene();
   });
