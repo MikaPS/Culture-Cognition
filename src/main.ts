@@ -142,25 +142,11 @@ function dialougeAnimation() {
   // Clear map
   app.innerHTML = "";
   // Elements for the background
-  // const globe = document.createElement("img");
-  // globe.src = "assets/globe.png";
-  // globe.style.position = "absolute";
-  // globe.style.left = "0%";
-  // globe.style.top = `40%`;
-  // globe.style.width = `${width * 1}px`;
-
   const globe = document.createElement("span");
   globe.innerHTML = "🌎";
   globe.style.fontFamily = "emoji, sans-serif";
-
-  // globe.style.fontFamily =
-  //   "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
-  // twemoji.parse(globe, {
-  //   folder: 'svg',
-  //   ext: '.svg',
-  // });
   globe.style.position = "absolute";
-  globe.style.top = `${height * 1.5}px`;
+  globe.style.top = `${height * 1.6}px`;
   globe.style.left = `${width / 2}px`;
   gsap.to(globe, {
     rotation: 720,
@@ -173,8 +159,7 @@ function dialougeAnimation() {
   const pin = document.createElement("span");
   pin.innerHTML = "📍";
   pin.style.position = "absolute";
-  pin.style.fontFamily =
-    "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
+  ("'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif");
   pin.style.top = `${height * 0.45}px`;
   pin.style.left = `${width * 0.25}px`;
   gsap.to(pin, { scale: width * 0.015, duration: 2, ease: "power2.inOut" }); // animation
@@ -225,10 +210,11 @@ function uiTextDialouge(heightOffset: number) {
 
   const moneyText = document.createElement("span");
   moneyText.innerHTML = `&nbsp;&nbsp;Money: ${money}&nbsp;&nbsp;`;
+  // moneyText.className = "text-box";
   Object.assign(moneyText.style, {
     position: "absolute",
     top: `${relativePos.top + 3}px`,
-    right: `${relativePos.right + 3}px`,
+    right: `${relativePos.right + 7}px`,
     borderRadius: "3px",
     border: "2px solid #1cba4b",
     backgroundColor: "#91edac",
@@ -418,7 +404,7 @@ function newDay() {
   const closedInvestments: Investment[] = checkIfInvestmentSucceeded();
   let newPayments = "";
   closedInvestments.forEach((investment) => {
-    newPayments += `${investment.symbol}${investment.name}${investment.symbol} got you ${investment.payout}\n`;
+    newPayments += `${investment.symbol}${investment.name}${investment.symbol} got you ${investment.payout}$\n`;
     const audioPlayer = new Audio();
     audioPlayer.loop = false;
     audioPlayer.volume = 0.8;
@@ -502,6 +488,8 @@ function pinCreator(
   }
 
   if (emoji == "📍") {
+    text.style.position = "absolute";
+    ("'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif");
     text.addEventListener("click", () => {
       currentPinID = id;
       currentContinent = continent;
@@ -746,7 +734,7 @@ function startScreen() {
   app.appendChild(instructions);
   app.appendChild(text);
 }
-dialougeAnimation();
+startScreen();
 
 function music() {
   const tracks = [
