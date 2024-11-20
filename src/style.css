@@ -114,21 +114,21 @@ button:focus-visible {
   padding: 10px; /* Adds space around the text */
 }
 
-
 /* Force light mode */
 body {
-  background-color: #ffffff; 
-  color: #000000; 
+  background-color: #ffffff;
+  color: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #ffffff !important; 
+    background-color: #ffffff !important;
     color: #000000 !important;
   }
 }
 
 /* Use the same emoji type across platforms */
-body  {
-  font-family: 'Twemoji', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+body {
+  font-family: "Twemoji", "Segoe UI Emoji", "Apple Color Emoji",
+    "Noto Color Emoji", sans-serif;
 }
