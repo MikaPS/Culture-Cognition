@@ -80,7 +80,7 @@ button:focus-visible {
   width: var(--rect-width, 400px); /* Default width if not set */
   height: var(--rect-height, 150px); /* Default height if not set */
   top: var(--rect-top, 50px); /* Fixed top position */
-  left: 700px; /* Fixed left position */
+  left: var(--rect-left, 700px); /* Fixed left position */
   background-color: var(
     --rect-bg-color,
     #d6a766
@@ -113,5 +113,3 @@ button:focus-visible {
   overflow-wrap: break-word; /* Ensures any long word will wrap */
   padding: 10px; /* Adds space around the text */
 }
-
-

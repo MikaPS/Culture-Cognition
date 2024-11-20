@@ -1,38 +1,178 @@
 {
-  "Puzzle Company": {
-    "symbol": "🧩",
-    "sentence": "We believe every piece has a place, and with your help, we will build a world where everyone gets the place they need."
+  "Africa": {
+    "Lion Shelter": {
+      "symbol": "🦁",
+      "sentence": "Investing in us is as effortless as the majesty of a lion's roar. With your support, every lion will enjoy a resting spot (or twelve) fit for royalty!"
+    },
+    "Coffee Foundation": {
+      "symbol": "☕",
+      "sentence": "Let’s brew a better tomorrow — Your support helps us make the best hot coffee and breakfast to serve to our customers."
+    },
+    "Cozy Cocoa": {
+      "symbol": "🍫",
+      "sentence": "Sweet dreams are made of chocolate! Your support will give us sweet joy."
+    },
+    "Spice it up": {
+      "symbol": "🫚",
+      "sentence": "Spice up your life! Your investment helps bring flavorful seasonings to kitchens."
+    },
+    "The Olive Theory": {
+      "symbol": "🫒",
+      "sentence": "From branches of peace to bowls of joy, olives can do everything! Help us grow magic!"
+    },
+    "Cashews": {
+      "symbol": "🥜",
+      "sentence": "Crack into something amazing! Your support helps turn cashews into a snack sensation"
+    },
+    "Rubber Co.": {
+      "symbol": "🛞",
+      "sentence": "Stretching the limits, bending the rules. Your investment makes sure the world stays as flexible as rubber."
+    }
   },
-  "Lighthouse Future": {
-    "symbol": "🔭",
-    "sentence": "We can navigate through stormy markets and guide your team to safe harbors. Let us be the beacon in your life!"
+  "North America": {
+    "Bear Lounges": {
+      "symbol": "🐻",
+      "sentence": "These fuzzy giants may be masters of the wild, but they still appreciate a good place to hibernate. Support to keep their naps uninterrupted!"
+    },
+    "Lightbulb Co": {
+      "symbol": "💡",
+      "sentence": "We’re here to brighten your day — literally. Your support helps us provide light and keep homes bright."
+    },
+    "This might be corny...": {
+      "symbol": "🌽",
+      "sentence": "A kernel of support goes a long way. Help us grow fields of corn for the world."
+    },
+    "Maple Syrup": {
+      "symbol": "🍁",
+      "sentence": "Sticky situations taste sweeter with maple! Invest to keep the golden syrup flowing."
+    },
+    "Fishing": {
+      "symbol": "🎣",
+      "sentence": "Hooked on quality? So are we. Let’s reel in seafood for everyone!"
+    },
+    "Milk": {
+      "symbol": "🐮",
+      "sentence": "Udderly amazing - Your support keeps the dairy delight flowing strong!"
+    },
+    "Cranberry": {
+      "symbol": "🫐",
+      "sentence": "Rich in color, bold in flavor. Cranberries are more than just a holiday fruit, invest to ensure they get the spot they deserve"
+    }
   },
-  "Cat Shelter": {
-    "symbol": "🐱",
-    "sentence": "Investing in us is easy as the grace of a cat and the precision of its pounce. With your support, we can ensure every kitty gets a cozy nap spot (or twelve)!"
+  "South America": {
+    "Parrot Preserve": {
+      "symbol": "🦜",
+      "sentence": "These feathery comedians love to squawk and drop gossip. Support us to keep their conversations lively!"
+    },
+    "Coffee Foundation": {
+      "symbol": "☕",
+      "sentence": "Let’s brew a better tomorrow — Your support helps us make the best hot coffee and breakfast to serve to our customers"
+    },
+    "Fruits Fruits Fruits": {
+      "symbol": "🍍",
+      "sentence": "Bursting with sunshine in every bite. Your help brings the best flavors to the world!"
+    },
+    "Yerba Mate": {
+      "symbol": "🍹",
+      "sentence": "Suprisngly, not a Santa Cruz native, support where the drink originated from!"
+    },
+    "Music": {
+      "symbol": "🥁",
+      "sentence": "From rhythmic beats to soulful strings, help us share the vibrant sounds with everyone!"
+    },
+    "Amazon Rainforest Conservation": {
+      "symbol": "🌳",
+      "sentence": "The lungs of the planet need your support. Together, we can protect the forest that gives us life!"
+    },
+    "Crystals and Minerals": {
+      "symbol": "🪨",
+      "sentence": "Raw to refined—your investment supports the craft that turns nature’s stones into dazzling works of art"
+    }
   },
-  "Hedgehog Houses": {
-    "symbol": "🦔",
-    "sentence": "These little buddies may have a few spikes, but they still need a soft place to stay in. Invest in us to keep the habitats safe and warm!"
+  "Europe": {
+    "Boar Houses": {
+      "symbol": "🐗",
+      "sentence": "These rugged buddies may have tusks, but they still need a safe place to roam. Invest in us to keep their habitats thriving!"
+    },
+    "Wine and Dine": {
+      "symbol": "🍷",
+      "sentence": "Raise a toast to perfection. Every bottle tells a story, and your support makes it possible!"
+    },
+    "Cheese": {
+      "symbol": "🧀",
+      "sentence": "Say cheese! Investing in us help bring the wonderful cheese flavors to the world."
+    },
+    "Watches": {
+      "symbol": "⌚",
+      "sentence": "This is a timeless choice. Our watches will ensure you arrive on the dot."
+    },
+    "Ballet": {
+      "symbol": "🩰",
+      "sentence": "Every pirouette tells a story of grace and skill. Support their dance journey."
+    },
+    "Cars": {
+      "symbol": "🏎️",
+      "sentence": "Performance and precision, crafted with care. Help us keep roads roaring with excellence."
+    }
   },
-  "Kitchen Meals": {
-    "symbol": "🔪",
-    "sentence": "Make sure we are not going to get cooked, and invest in our kitchens! We will chef up a great meal with your support!"
+  "Asia": {
+    "Panda Power": {
+      "symbol": "🐼",
+      "sentence": "Investing in us is as simple as a panda's peaceful munch on bamboo. With your support, we can ensure every panda has a perfect spot to nap!"
+    },
+    "Smooth Silk": {
+      "symbol": "👚",
+      "sentence": "Wrap yourself in elegance. Your investment helps us keep weaving magic around the world."
+    },
+    "Tea Time": {
+      "symbol": "🫖",
+      "sentence": "Steeped in tradition and bursting with flavor. Your support keeps every cup warm and welcoming!"
+    },
+    "Rice": {
+      "symbol": "🍚",
+      "sentence": "Small grains, big impact. Your investment helps this crop reach kitchens!"
+    },
+    "Bamboo": {
+      "symbol": "🎍",
+      "sentence": "From furniture to fabrics, its potential is endless. Let's grow its role in a sustainable future"
+    },
+    "Calligraphy": {
+      "symbol": "✒️",
+      "sentence": "Every stroke tells a story of precision and grace. Join us in keeping the art of calligraphy alive!"
+    },
+    "Martial Arts": {
+      "symbol": "🤺",
+      "sentence": "From kung fu to karate, every move tells a story. Help us keep these traditions alive and kicking"
+    }
   },
-  "Lightbulb Co": {
-    "symbol": "💡",
-    "sentence": "We’re here to brighten your day — literally. Your support helps us provide light and keep homes bright."
-  },
-  "Coffee Foundation": {
-    "symbol": "☕",
-    "sentence": "Let’s brew a better tomorrow — Your support helps us make the best hot coffee and breakfast to serve to our customers"
-  },
-  "Charge Your Future": {
-    "symbol": "🔋",
-    "sentence": "You’ve got the power! Help us make chargers by investing in our company"
-  },
-  "Band Tour": {
-    "symbol": "🎵",
-    "sentence": "Let’s tune into a better world! Support our band as we play in a tour."
+  "Australia": {
+    "kangaroos Houses": {
+      "symbol": "🦘",
+      "sentence": "These little buddies may have a pouch, but they still need a soft place to stay in. Invest to keep the habitats warm for kangaroos"
+    },
+    "Lighthouse Future": {
+      "symbol": "🔭",
+      "sentence": "We can navigate through stormy markets and guide your team to safe harbors. Let us be the beacon in your life!"
+    },
+    "World Tour": {
+      "symbol": "👣",
+      "sentence": "From the Great Barrier Reef to the Outback, help us share the beauty of this land with the world!"
+    },
+    "Aerospace": {
+      "symbol": "🚀",
+      "sentence": "Reaching for the stars! Help us make sure the aviation is taking off!"
+    },
+    "Surf": {
+      "symbol": "🏄",
+      "sentence": "Ride the wave of innovation — help us create the surfboards that ride across the coast"
+    },
+    "Spider": {
+      "symbol": "🕷️",
+      "sentence": "Not all heroes wear capes — some have eight legs! Your support help reduce stereortypes of spiders."
+    },
+    "Flip Flops": {
+      "symbol": "🩴",
+      "sentence": "From beachside to backyard, flip-flops are built for everything. Help us one step at a time!"
+    }
   }
 }
