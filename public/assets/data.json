@@ -2,7 +2,7 @@
   "Africa": {
     "Lion Shelter": {
       "symbol": "🦁",
-      "sentence": "Investing in us is as effortless as the majesty of a lion's roar. With your support, every lion will enjoy a resting spot (or twelve) fit for royalty!"
+      "sentence": "Investing in us is as effortless as the majesty of a lion's roar. With your support, every lion will enjoy a resting spot fit for royalty!"
     },
     "Coffee Foundation": {
       "symbol": "☕",
@@ -10,29 +10,29 @@
     },
     "Cozy Cocoa": {
       "symbol": "🍫",
-      "sentence": "Sweet dreams are made of chocolate! Your support will give us sweet joy."
+      "sentence": "Chocolate is always a sweet decision — You can help us provide the best hot chocolates."
     },
     "Spice it up": {
       "symbol": "🫚",
-      "sentence": "Spice up your life! Your investment helps bring flavorful seasonings to kitchens."
+      "sentence": "Spice up your life! Keep calm and curry on by supporting our company."
     },
     "The Olive Theory": {
       "symbol": "🫒",
-      "sentence": "From branches of peace to bowls of joy, olives can do everything! Help us grow magic!"
+      "sentence": "Olive my dreams can come true with your investment! A small donation can help a lot!s"
     },
-    "Cashews": {
+    "Cashew later, alligator": {
       "symbol": "🥜",
-      "sentence": "Crack into something amazing! Your support helps turn cashews into a snack sensation"
+      "sentence": "Ready to go nuts? Crack into something amazing and invest in our company!"
     },
-    "Rubber Co.": {
-      "symbol": "🛞",
-      "sentence": "Stretching the limits, bending the rules. Your investment makes sure the world stays as flexible as rubber."
+    "Gold To Meet You": {
+      "symbol": "🪙",
+      "sentence": "Investing in us is like a gold mine! You will not be disappointed"
     }
   },
   "North America": {
     "Bear Lounges": {
       "symbol": "🐻",
-      "sentence": "These fuzzy giants may be masters of the wild, but they still appreciate a good place to hibernate. Support to keep their naps uninterrupted!"
+      "sentence": "These fuzzy giants may be masters of the wild, but they still need a good place to hibernate. Support to keep their naps uninterrupted!"
     },
     "Lightbulb Co": {
       "symbol": "💡",
@@ -44,19 +44,19 @@
     },
     "Maple Syrup": {
       "symbol": "🍁",
-      "sentence": "Sticky situations taste sweeter with maple! Invest to keep the golden syrup flowing."
+      "sentence": "Sticky situations taste sweeter with maple! Invest in the sap of champions."
     },
     "Fishing": {
       "symbol": "🎣",
-      "sentence": "Hooked on quality? So are we. Let’s reel in seafood for everyone!"
+      "sentence": "Hooked on quality? So are we. Let's reel in seafood for everyone!"
     },
     "Milk": {
       "symbol": "🐮",
-      "sentence": "Udderly amazing - Your support keeps the dairy delight flowing strong!"
+      "sentence": "Udderly amazing - Your support keeps dairy flowing strong!"
     },
     "Cranberry": {
       "symbol": "🫐",
-      "sentence": "Rich in color, bold in flavor. Cranberries are more than just a holiday fruit, invest to ensure they get the spot they deserve"
+      "sentence": "Cranberries are more than just a holiday fruit, your support is berry important to us."
     }
   },
   "South America": {
@@ -66,19 +66,19 @@
     },
     "Coffee Foundation": {
       "symbol": "☕",
-      "sentence": "Let’s brew a better tomorrow — Your support helps us make the best hot coffee and breakfast to serve to our customers"
+      "sentence": "Let's brew a better tomorrow — Your support helps us make the best hot coffee and breakfast to serve to our customers"
     },
     "Fruits Fruits Fruits": {
       "symbol": "🍍",
-      "sentence": "Bursting with sunshine in every bite. Your help brings the best flavors to the world!"
+      "sentence": "Bursting with sunshine in every bite! Life will be grape if you support us."
     },
     "Yerba Mate": {
       "symbol": "🍹",
-      "sentence": "Suprisngly, not a Santa Cruz native, support where the drink originated from!"
+      "sentence": "Suprisngly, not a Santa Cruz native. Support where the drink originated from!"
     },
-    "Music": {
+    "Drumroll, please": {
       "symbol": "🥁",
-      "sentence": "From rhythmic beats to soulful strings, help us share the vibrant sounds with everyone!"
+      "sentence": "From rhythmic beats to amazing strings, help us grow one beat at a time!"
     },
     "Amazon Rainforest Conservation": {
       "symbol": "🌳",
@@ -86,7 +86,7 @@
     },
     "Crystals and Minerals": {
       "symbol": "🪨",
-      "sentence": "Raw to refined—your investment supports the craft that turns nature’s stones into dazzling works of art"
+      "sentence": "This is crystal clear - your support is needed! Please help our company!"
     }
   },
   "Europe": {
@@ -104,7 +104,7 @@
     },
     "Watches": {
       "symbol": "⌚",
-      "sentence": "This is a timeless choice. Our watches will ensure you arrive on the dot."
+      "sentence": "A minute on the wrist, forever in your heart. Helping this company is a timeless choice."
     },
     "Ballet": {
       "symbol": "🩰",
@@ -122,7 +122,7 @@
     },
     "Smooth Silk": {
       "symbol": "👚",
-      "sentence": "Wrap yourself in elegance. Your investment helps us keep weaving magic around the world."
+      "sentence": "Wrap yourself in elegance. Your investment helps us weave magic around the world."
     },
     "Tea Time": {
       "symbol": "🫖",
@@ -134,7 +134,7 @@
     },
     "Bamboo": {
       "symbol": "🎍",
-      "sentence": "From furniture to fabrics, its potential is endless. Let's grow its role in a sustainable future"
+      "sentence": "Bamboo-lieve it or not, it's true - our company needs your investment. Help us grow as mighty as the bamboo."
     },
     "Calligraphy": {
       "symbol": "✒️",
@@ -142,7 +142,7 @@
     },
     "Martial Arts": {
       "symbol": "🤺",
-      "sentence": "From kung fu to karate, every move tells a story. Help us keep these traditions alive and kicking"
+      "sentence": "From kung fu to karate, every move tells a story. Help us keep these traditions kicking"
     }
   },
   "Australia": {
