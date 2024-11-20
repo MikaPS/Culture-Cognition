@@ -104,7 +104,7 @@ function applyButtonStyle(text: HTMLElement, top: number, left: number) {
 // Randomizes the investment, risk, and time
 function investmentCreator(continent: string): Investment {
   const randInvestmentIndex = Math.floor(
-    Math.random() * countriesData[continent]["companiesData"].length,
+    Math.random() * countriesData[continent]["companiesData"].length
   );
   const randRisk =
     Math.floor(Math.random() * (risk_investment[1] - risk_investment[0] + 1)) +
@@ -114,7 +114,7 @@ function investmentCreator(continent: string): Investment {
     time_investment[0];
   const randPayout =
     Math.floor(
-      Math.random() * (payout_investment[1] - payout_investment[0] + 1),
+      Math.random() * (payout_investment[1] - payout_investment[0] + 1)
     ) + payout_investment[0];
   const randCost =
     Math.floor(Math.random() * (cost_investment[1] - cost_investment[0] + 1)) +
@@ -132,7 +132,7 @@ function investmentCreator(continent: string): Investment {
     id: currentPinID,
   };
   console.log(
-    "current pin: " + currentPinID + " investment id: " + investment.id,
+    "current pin: " + currentPinID + " investment id: " + investment.id
   );
 
   return investment;
@@ -144,6 +144,8 @@ function dialougeAnimation() {
   // Elements for the background
   const globe = document.createElement("span");
   globe.textContent = "🌎";
+  globe.style.fontFamily =
+    "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
   globe.style.position = "absolute";
   globe.style.top = `${height * 1.5}px`;
   globe.style.left = `${width / 2}px`;
@@ -158,6 +160,8 @@ function dialougeAnimation() {
   const pin = document.createElement("span");
   pin.textContent = "📍";
   pin.style.position = "absolute";
+  pin.style.fontFamily =
+    "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
   pin.style.top = `${height * 0.45}px`;
   pin.style.left = `${width * 0.25}px`;
   gsap.to(pin, { scale: width * 0.015, duration: 2, ease: "power2.inOut" }); // animation
@@ -182,6 +186,8 @@ function uiTextDialouge(heightOffset: number) {
 
   const envelope = document.createElement("span");
   envelope.innerHTML = "📨";
+  envelope.style.fontFamily =
+    "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
   envelope.style.fontSize = "100px";
   envelope.style.position = "absolute";
   envelope.style.top = `${10 + heightOffset}px`;
@@ -272,7 +278,7 @@ function uiTextDialouge(heightOffset: number) {
       countriesData[currentContinent]["companiesData"].splice(investment.id, 1);
       countriesData[currentContinent]["companiesNames"].splice(
         investment.id,
-        1,
+        1
       );
       openInvestments.push(investment);
       openInvestmentsID.push(currentPinID);
@@ -437,7 +443,7 @@ function checkIfInvestmentSucceeded() {
     if (investment.time == 0) {
       const randRisk =
         Math.floor(
-          Math.random() * (risk_investment[1] - risk_investment[0] + 1),
+          Math.random() * (risk_investment[1] - risk_investment[0] + 1)
         ) + risk_investment[0];
       if (randRisk <= investment.risk) {
         money += investment.payout;
@@ -447,7 +453,7 @@ function checkIfInvestmentSucceeded() {
         pinSucess[investment.id] = 2;
       }
       const index = openInvestments.findIndex(
-        (item) => item.name === investment.name,
+        (item) => item.name === investment.name
       );
       if (index !== -1) openInvestments.splice(index, 1);
     }
@@ -462,7 +468,7 @@ function pinCreator(
   emoji: string,
   id: number,
   isSuccess: number,
-  continent: string,
+  continent: string
 ): HTMLElement {
   const text = document.createElement("span");
   text.textContent = emoji;
@@ -541,7 +547,7 @@ function loadGameScene() {
       pinSymbols[i],
       i,
       pinSucess[i],
-      continents[i - 1],
+      continents[i - 1]
     );
   }
 }
@@ -558,7 +564,7 @@ function endGame() {
   openInvestments.forEach((investment) => {
     const randRisk =
       Math.floor(
-        Math.random() * (risk_investment[1] - risk_investment[0] + 1),
+        Math.random() * (risk_investment[1] - risk_investment[0] + 1)
       ) + risk_investment[0];
     if (randRisk <= investment.risk) {
       money += investment.payout;
@@ -568,7 +574,7 @@ function endGame() {
       pinSucess[investment.id] = 2;
     }
     const index = openInvestments.findIndex(
-      (item) => item.name === investment.name,
+      (item) => item.name === investment.name
     );
     if (index !== -1) openInvestments.splice(index, 1);
   });
