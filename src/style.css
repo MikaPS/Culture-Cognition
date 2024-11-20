@@ -115,15 +115,20 @@ button:focus-visible {
 }
 
 
+/* Force light mode */
 body {
-  background-color: #ffffff; /* Light background */
-  color: #000000; /* Dark text color */
+  background-color: #ffffff; 
+  color: #000000; 
 }
 
-/* Override system preferences */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #ffffff !important; /* Force light background */
-    color: #000000 !important; /* Force dark text */
+    background-color: #ffffff !important; 
+    color: #000000 !important;
   }
+}
+
+/* Use the same emoji type across platforms */
+body  {
+  font-family: 'Twemoji', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
 }
