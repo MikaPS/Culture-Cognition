@@ -113,3 +113,17 @@ button:focus-visible {
   overflow-wrap: break-word; /* Ensures any long word will wrap */
   padding: 10px; /* Adds space around the text */
 }
+
+
+body {
+  background-color: #ffffff; /* Light background */
+  color: #000000; /* Dark text color */
+}
+
+/* Override system preferences */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #ffffff !important; /* Force light background */
+    color: #000000 !important; /* Force dark text */
+  }
+}
