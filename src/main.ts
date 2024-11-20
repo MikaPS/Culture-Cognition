@@ -717,7 +717,7 @@ function startScreen() {
 
   const instructions = document.createElement("span");
   instructions.innerHTML =
-    "You're an investor, and the faith of multiple companies is in your hands!<br>In 7 days, you'll need to make as much money as possible by going around the world and supporting companies.<br><br>Do not fear, each company will have a description with their success rate and cost.<br><br>Click the thumbs up emoji when you're ready to start!";
+    "You're an investor, and the faith of multiple companies is in your hands!<br>In 7 days, you'll need to make as much money as possible by going around the world and supporting companies.<br><br>Do not fear, each company will have a description with their success rate and cost.<br><br>Click the thumbs up emoji when you're ready to start!<br><br>Note: game is recommended to play in full screen (refresh the page after making it full screen)";
   instructions.style.position = "absolute";
   instructions.style.top = `${height * 0.4}px`;
   instructions.style.textAlign = "center";
@@ -744,7 +744,7 @@ function startScreen() {
   app.appendChild(instructions);
   app.appendChild(text);
 }
-startScreen();
+dialougeAnimation();
 
 function music() {
   const tracks = [
