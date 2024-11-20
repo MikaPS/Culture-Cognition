@@ -113,7 +113,8 @@ button:focus-visible {
 
 @font-face {
   font-family: "google_emoji";
-  src: url("../public/assets/fonts/NotoColorEmoji-Regular.ttf") format("truetype");
+  src: url("../public/assets/fonts/NotoColorEmoji-Regular.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }

@@ -658,7 +658,19 @@ function endGame() {
                         `;
       title.innerText = `Article ${textCount} `;
     } else if (textCount == 6) {
+      text.innerText = `Music credit: https://tomfeldmann.itch.io/old-cartoon-music-pack-lite-free\n
+                  Not enough money sound effect: Sound Effect by Universfield "https://pixabay.com/users/universfield-28281460/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=206492" from Pixabay 
+                  \nSuccessful investment: Sound Effect by chieuk "https://pixabay.com/users/chieuk-46505609/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=257878" from Pixabay
+                  \nSelecting an investment: Sound Effect by freesound_community "https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=98269" from Pixabay
+                  \nEmojis: https://emojipedia.org/      
+                  \nMap and letter: Canva free asset library
+                  `;
+      title.innerText = `Credits `;
+    } else if (textCount == 7) {
       // Restart game!
+      day = 0;
+      money = 0;
+
       pinSymbols.fill("📍");
       pinSymbols[0] = "";
       pinSucess.fill(0);
