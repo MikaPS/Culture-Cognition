@@ -50,7 +50,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: "Twemoji", "Segoe UI Emoji", "Apple Color Emoji",
-  "Noto Color Emoji", sans-serif;
+    "Noto Color Emoji", sans-serif;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -77,33 +77,25 @@ button:focus-visible {
 }
 
 .rectangle {
-  position: absolute; 
+  position: absolute;
   width: var(--rect-width, 400px);
-  height: var(--rect-height, 150px); 
-  top: var(--rect-top, 50px); 
-  left: var(--rect-left, 700px); 
-  background-color: var(
-    --rect-bg-color,
-    #d6a766
-  );
+  height: var(--rect-height, 150px);
+  top: var(--rect-top, 50px);
+  left: var(--rect-left, 700px);
+  background-color: var(--rect-bg-color, #d6a766);
   font-family: "Twemoji", "Segoe UI Emoji", "Apple Color Emoji",
-  "Noto Color Emoji", sans-serif;
-
+    "Noto Color Emoji", sans-serif;
 }
 
 .new_day_rect {
-  position: absolute; 
-  width: var(--rect-width, 600px); 
-  height: var(--rect-height, 600px); 
+  position: absolute;
+  width: var(--rect-width, 600px);
+  height: var(--rect-height, 600px);
   top: 150px;
-  left: 150px; 
-  background-color: var(
-    --rect-bg-color,
-    #d5b1f2
-  ); 
+  left: 150px;
+  background-color: var(--rect-bg-color, #d5b1f2);
   font-family: "Twemoji", "Segoe UI Emoji", "Apple Color Emoji",
-  "Noto Color Emoji", sans-serif;
-
+    "Noto Color Emoji", sans-serif;
 }
 
 @font-face {
@@ -112,7 +104,6 @@ button:focus-visible {
     format("truetype");
   font-weight: normal;
   font-style: normal;
-  
 }
 
 .text-box {
@@ -121,8 +112,7 @@ button:focus-visible {
   overflow-wrap: break-word; /* Ensures any long word will wrap */
   padding: 10px; /* Adds space around the text */
   font-family: "Twemoji", "Segoe UI Emoji", "Apple Color Emoji",
-  "Noto Color Emoji", sans-serif;
-
+    "Noto Color Emoji", sans-serif;
 }
 
 /* Force light mode */
