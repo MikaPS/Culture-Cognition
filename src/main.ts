@@ -104,7 +104,7 @@ function applyButtonStyle(text: HTMLElement, top: number, left: number) {
 // Randomizes the investment, risk, and time
 function investmentCreator(continent: string): Investment {
   const randInvestmentIndex = Math.floor(
-    Math.random() * countriesData[continent]["companiesData"].length,
+    Math.random() * countriesData[continent]["companiesData"].length
   );
   const randRisk =
     Math.floor(Math.random() * (risk_investment[1] - risk_investment[0] + 1)) +
@@ -114,7 +114,7 @@ function investmentCreator(continent: string): Investment {
     time_investment[0];
   const randPayout =
     Math.floor(
-      Math.random() * (payout_investment[1] - payout_investment[0] + 1),
+      Math.random() * (payout_investment[1] - payout_investment[0] + 1)
     ) + payout_investment[0];
   const randCost =
     Math.floor(Math.random() * (cost_investment[1] - cost_investment[0] + 1)) +
@@ -132,7 +132,7 @@ function investmentCreator(continent: string): Investment {
     id: currentPinID,
   };
   console.log(
-    "current pin: " + currentPinID + " investment id: " + investment.id,
+    "current pin: " + currentPinID + " investment id: " + investment.id
   );
 
   return investment;
@@ -144,12 +144,12 @@ function dialougeAnimation() {
   // Elements for the background
   const globe = document.createElement("span");
   globe.innerHTML = "🌎";
-  globe.style.fontFamily = "emoji, sans-serif";
+  globe.style.fontFamily = "google_emoji, sans-serif";
   globe.style.position = "absolute";
-  globe.style.top = `${height * 1.6}px`;
+  globe.style.top = `${height * 1.7}px`;
   globe.style.left = `${width / 2}px`;
   gsap.to(globe, {
-    rotation: 720,
+    rotation: 730,
     scale: width * 0.066,
     duration: 1,
     ease: "power1.inOut",
@@ -159,8 +159,7 @@ function dialougeAnimation() {
   const pin = document.createElement("span");
   pin.innerHTML = "📍";
   pin.style.position = "absolute";
-  pin.style.fontFamily =
-    "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
+  pin.style.fontFamily = "google_emoji, sans-serif";
   pin.style.top = `${height * 0.45}px`;
   pin.style.left = `${width * 0.25}px`;
   gsap.to(pin, { scale: width * 0.015, duration: 2, ease: "power2.inOut" }); // animation
@@ -172,10 +171,13 @@ function uiTextDialouge(heightOffset: number) {
   instructions.style.display = "inline-block";
   instructions.style.textAlign = "left";
   instructions.innerText =
-    "You're going to read about two companies.\nEach has a different descriptions and statistics, and you can only invest in one.\nChoose carefully between the two, or do nothing.";
+    "You're going to read about two companies.\nEach has a different descriptions and statistics, and you can only invest in one. Choose carefully between the two, or do nothing.";
   instructions.style.position = "absolute";
   instructions.style.top = `${height * 0.01}px`;
   instructions.style.left = `${width * 0.01}px`;
+  instructions.className = "text-box";
+  instructions.style.setProperty("--width", `${width * 0.35}px`);
+
   dialougeApp.appendChild(instructions);
 
   const rectangle = document.createElement("span");
@@ -185,8 +187,7 @@ function uiTextDialouge(heightOffset: number) {
 
   const envelope = document.createElement("span");
   envelope.innerHTML = "📨";
-  envelope.style.fontFamily =
-    "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
+  envelope.style.fontFamily = "emoji, sans-serif";
   envelope.style.fontSize = "100px";
   envelope.style.position = "absolute";
   envelope.style.top = `${10 + heightOffset}px`;
@@ -278,7 +279,7 @@ function uiTextDialouge(heightOffset: number) {
       countriesData[currentContinent]["companiesData"].splice(investment.id, 1);
       countriesData[currentContinent]["companiesNames"].splice(
         investment.id,
-        1,
+        1
       );
       openInvestments.push(investment);
       openInvestmentsID.push(currentPinID);
@@ -443,7 +444,7 @@ function checkIfInvestmentSucceeded() {
     if (investment.time == 0) {
       const randRisk =
         Math.floor(
-          Math.random() * (risk_investment[1] - risk_investment[0] + 1),
+          Math.random() * (risk_investment[1] - risk_investment[0] + 1)
         ) + risk_investment[0];
       if (randRisk <= investment.risk) {
         money += investment.payout;
@@ -453,7 +454,7 @@ function checkIfInvestmentSucceeded() {
         pinSucess[investment.id] = 2;
       }
       const index = openInvestments.findIndex(
-        (item) => item.name === investment.name,
+        (item) => item.name === investment.name
       );
       if (index !== -1) openInvestments.splice(index, 1);
     }
@@ -468,7 +469,7 @@ function pinCreator(
   emoji: string,
   id: number,
   isSuccess: number,
-  continent: string,
+  continent: string
 ): HTMLElement {
   const text = document.createElement("span");
   text.textContent = emoji;
@@ -489,8 +490,7 @@ function pinCreator(
   }
 
   if (emoji == "📍") {
-    text.style.fontFamily =
-      "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
+    text.style.fontFamily = "google_emoji, sans-serif";
     text.addEventListener("click", () => {
       currentPinID = id;
       currentContinent = continent;
@@ -549,7 +549,7 @@ function loadGameScene() {
       pinSymbols[i],
       i,
       pinSucess[i],
-      continents[i - 1],
+      continents[i - 1]
     );
   }
 }
@@ -566,7 +566,7 @@ function endGame() {
   openInvestments.forEach((investment) => {
     const randRisk =
       Math.floor(
-        Math.random() * (risk_investment[1] - risk_investment[0] + 1),
+        Math.random() * (risk_investment[1] - risk_investment[0] + 1)
       ) + risk_investment[0];
     if (randRisk <= investment.risk) {
       money += investment.payout;
@@ -576,7 +576,7 @@ function endGame() {
       pinSucess[investment.id] = 2;
     }
     const index = openInvestments.findIndex(
-      (item) => item.name === investment.name,
+      (item) => item.name === investment.name
     );
     if (index !== -1) openInvestments.splice(index, 1);
   });
@@ -606,7 +606,7 @@ function endGame() {
 
   const text = document.createElement("span");
   text.style.display = "inline-block";
-  text.innerText = `Day: ${day}\nMoney: ${money}\nAny payments:\n${newPayments}\n\nOut of ${day} days,\n\tyou chose the risker option ${numRiskyChoices} times\n\tyou chose to not invest ${numAversion}\n\tand chose the long-term investment ${numWaitChoices} times
+  text.innerText = `Day: ${day}\nMoney: ${money}\nAny payments:\n${newPayments}\n\nOut of ${day} days,\n\tyou chose the risker option ${numRiskyChoices} times\n\tyou chose to not invest ${numAversion} times\n\tand chose the long-term investment ${numWaitChoices} times
                     `;
   text.style.position = "absolute";
   text.style.top = "25%";

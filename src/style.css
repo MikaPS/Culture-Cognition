@@ -111,6 +111,13 @@ button:focus-visible {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "google_emoji";
+  src: url("../public/assets/fonts/NotoColorEmoji-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .text-box {
   width: var(--width, 200px);
   word-wrap: break-word; /* Allows long words to break and wrap */
