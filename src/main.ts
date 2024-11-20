@@ -142,10 +142,21 @@ function dialougeAnimation() {
   // Clear map
   app.innerHTML = "";
   // Elements for the background
+  // const globe = document.createElement("img");
+  // globe.src = "assets/globe.png";
+  // globe.style.position = "absolute";
+  // globe.style.left = "0%";
+  // globe.style.top = `40%`;
+  // globe.style.width = `${width * 1}px`;
+
   const globe = document.createElement("span");
-  globe.textContent = "🌎";
+  globe.innerHTML = "🌎";
   globe.style.fontFamily =
     "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
+  // twemoji.parse(globe, {
+  //   folder: 'svg',
+  //   ext: '.svg',
+  // });
   globe.style.position = "absolute";
   globe.style.top = `${height * 1.5}px`;
   globe.style.left = `${width / 2}px`;
@@ -158,7 +169,7 @@ function dialougeAnimation() {
   dialougeApp.append(globe);
 
   const pin = document.createElement("span");
-  pin.textContent = "📍";
+  pin.innerHTML = "📍";
   pin.style.position = "absolute";
   pin.style.fontFamily =
     "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
