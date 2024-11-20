@@ -106,8 +106,7 @@ button:focus-visible {
 
 @font-face {
   font-family: "emoji";
-  src: url("../public/assets/fonts/TwemojiMozilla.ttf")
-    format("truetype");
+  src: url("../public/assets/fonts/TwemojiMozilla.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
