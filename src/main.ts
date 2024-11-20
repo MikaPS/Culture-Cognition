@@ -151,8 +151,10 @@ function dialougeAnimation() {
 
   const globe = document.createElement("span");
   globe.innerHTML = "🌎";
-  globe.style.fontFamily =
-    "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
+  globe.style.fontFamily = "Londrina, sans-serif";
+
+  // globe.style.fontFamily =
+  //   "'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif";
   // twemoji.parse(globe, {
   //   folder: 'svg',
   //   ext: '.svg',
