@@ -49,7 +49,8 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  font-family: "Twemoji", "Segoe UI Emoji", "Apple Color Emoji",
+  "Noto Color Emoji", sans-serif;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -76,27 +77,33 @@ button:focus-visible {
 }
 
 .rectangle {
-  position: absolute; /* Allows positioning with top and left */
-  width: var(--rect-width, 400px); /* Default width if not set */
-  height: var(--rect-height, 150px); /* Default height if not set */
-  top: var(--rect-top, 50px); /* Fixed top position */
-  left: var(--rect-left, 700px); /* Fixed left position */
+  position: absolute; 
+  width: var(--rect-width, 400px);
+  height: var(--rect-height, 150px); 
+  top: var(--rect-top, 50px); 
+  left: var(--rect-left, 700px); 
   background-color: var(
     --rect-bg-color,
     #d6a766
-  ); /* Default color if not set */
+  );
+  font-family: "Twemoji", "Segoe UI Emoji", "Apple Color Emoji",
+  "Noto Color Emoji", sans-serif;
+
 }
 
 .new_day_rect {
-  position: absolute; /* Allows positioning with top and left */
-  width: var(--rect-width, 600px); /* Default width if not set */
-  height: var(--rect-height, 600px); /* Default height if not set */
-  top: 150px; /* Fixed top position */
-  left: 150px; /* Fixed left position */
+  position: absolute; 
+  width: var(--rect-width, 600px); 
+  height: var(--rect-height, 600px); 
+  top: 150px;
+  left: 150px; 
   background-color: var(
     --rect-bg-color,
     #d5b1f2
-  ); /* Default color if not set */
+  ); 
+  font-family: "Twemoji", "Segoe UI Emoji", "Apple Color Emoji",
+  "Noto Color Emoji", sans-serif;
+
 }
 
 @font-face {
@@ -105,6 +112,7 @@ button:focus-visible {
     format("truetype");
   font-weight: normal;
   font-style: normal;
+  
 }
 
 .text-box {
@@ -112,6 +120,9 @@ button:focus-visible {
   word-wrap: break-word; /* Allows long words to break and wrap */
   overflow-wrap: break-word; /* Ensures any long word will wrap */
   padding: 10px; /* Adds space around the text */
+  font-family: "Twemoji", "Segoe UI Emoji", "Apple Color Emoji",
+  "Noto Color Emoji", sans-serif;
+
 }
 
 /* Force light mode */
